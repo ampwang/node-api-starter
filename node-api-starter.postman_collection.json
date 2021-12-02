@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "4b2875de-80c6-44d6-93a0-a23c5a7f94e2",
+		"name": "node-api-starter",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/feed/posts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/feed/posts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"posts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/feed/post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"First post title\",\n    \"content\": \"First post content\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/feed/post",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"feed",
+						"post"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

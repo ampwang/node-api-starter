@@ -10,7 +10,7 @@ exports.getPosts = (req, res) => {
 exports.postPost = (req, res) => {
   const title = req.body.title;
   const content = req.body.content;
-  // => create data in database here
+  //-- handle post here --//
   res.status(201).json({
     message: 'Post success!',
     post: {
